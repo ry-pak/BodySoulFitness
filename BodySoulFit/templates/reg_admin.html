@@ -1,0 +1,56 @@
+
+    <!--хедер-->
+{% include 'header.html' ignore missing %}
+
+    <!-- Вход-->
+    <div class="apply-bg" style="position: relative;">
+                <!-- Окно куки-->
+{% include 'cookie.html' ignore missing %} 
+        <div class="row mb-3 text-center mx-4 mx-auto p-2" style="background: rgba(68, 67, 67, 0.7);height: 900px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A;">
+            <div class="col-md-12 themed-grid-col">
+              <div class="pb-2 pt-5">
+                <h1 style="color: bisque;" class="mt-4">ДОБАВЛЕНИЕ УЧЁТНОЙ ЗАПиСИ</h1>
+              </div>
+              
+                <div class="col-md-6 themed-grid-col text-center headings" style="margin: 10px auto; font-size: 18px; padding: 10px 40px; line-height: 1.5; color: rgb(223, 200, 171); font-weight: 900 !important;">   
+                    Для того чтобы войти в административную панель, нужно зарегистрировать администратора с помощью корпоративной почты.
+                    <br>Если Вы уже зарегистрированы, введите логин и пароль, использованные при регистрации (кнопка "Войти").
+                </div>
+                
+                     <div class="col-md-5 themed-grid-col p-2 border border-warning" style="margin: 20px auto; width: 500px;">
+                    <form action="/reg_admin"  method="post" style="width: 350px; margin: 10px auto">
+                             <!--wtforms-->
+                            <!--защита от csrf атак-->
+                            {{ form.hidden_tag() }}
+                      <div class=" text-white">
+                        <!--проверка паттерна логина=email-->
+                        {{ form.email.label() }} {{ form.email(class_="form-control") }}
+                      </div>
+
+                    <div class="text-white">
+                      <!--проверка паттерна пароля = 8-20 символов-->
+                      {{ form.psw.label() }} {{ form.psw(class_="form-control") }}
+                      </div>
+                      <div class="text-white" style="margin-top: 20px;">
+                        {{ form.remember.label() }} {{ form.remember() }}
+                      </div>
+                      <p></p>
+
+                      <div >
+                        {{ form.submit(class_="btn btn-outline-warning") }}
+                      </div>
+                      <p></p>
+                      <a href="{{url_for('enter_admin')}}" style="color: #EFB35A; font-weight: 700;">Войти</a>  
+                    
+                    {% for notifcation in get_flashed_messages() %}
+                    <div class="flash" style="color: antiquewhite; size: 30px;">{{notifcation}}</div>
+                    {% endfor %}
+                  </form>
+                </div>
+            </div>
+
+          </div>
+    </div>
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}

@@ -1,0 +1,79 @@
+
+  <div>
+  <!--хедер сайта-->
+{% include 'header.html' ignore missing %}
+    </div>
+      <!--раздел тренажёрный зал-->
+      <div class="px-1 my-2 text-center gym-section" style="margin-right: -7px; width: 1520px;">
+        <div class="col-6 mb-1 text-center">
+        
+        <div class="col-lg-6 mx-5 px-2 my-container text-white" style="margin-left: 100px !important; padding-top: 33px; padding-bottom: 92px; width: 420px;">
+          <h1 class="display-5 fw-bold text-body-emphasis mt-1" style="color: azure !important; font-size: 35px;">Тренажёрный зал</h1>
+          <p class="lead mb-4" style="font-size: 20px; padding-top: 10px;">Просторный зал оборудован всеми доступными на сегодняшний день современными тренажёрами, а также гантелями и другой экипировкой</p>
+            <p class="lead mb-4" style="font-size: 20px;">Доступны персональные тренировки</p>
+            <p class="lead mb-2" style="font-size: 20px;">Индивидальный подход к каждому клиенту</p>
+
+          <div class=" ">
+            <button type="button" onclick="location.href='gym'" class="btn btn-primary btn-lg px-4 gap-3 button_header" style="margin-bottom: 16.5px; margin-left: 0px; margin-top: 20px !important;">УЗНАТЬ ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- раздел айкидо-->
+      <div class="px-1 my-2 text-center aikido-section" style="margin-right: -7px; width: 1520px;">
+        <div class="col-5 mb-1 text-center" style="margin-left: 880px;">
+        
+        <div class="col-lg-6 mx-5 px-3 my-container text-white" style="margin-left: 100px !important; padding-top: 20px; padding-bottom: 55px; padding-left: 30px !important; padding-right: 30px !important; width: 420px">
+          <h1 class="display-5 fw-bold text-body-emphasis mt-1" style="color: azure !important; font-size: 35px;">Айкидо</h1>
+          <p class="lead mb-4" style="font-size: 20px; padding-top: 10px;">В фитнес-центре выделен отдельный зал для занятий айкидо с опытными сенсеями</p>
+            <p class="lead mb-4" style="font-size: 20px;">Занятия проводятся для детей старше 7 лет, также есть группа для взрослых, не имеющих специальной подготовки</p>
+            <p class="lead mb-4" style="font-size: 20px;">Возможны персональные занятия</p>
+
+          <div class="">
+            <button onclick="location.href='aikido'" class="btn btn-primary btn-lg px-4 gap-3 button_header" style="margin-bottom: 16.5px; margin-left: 0px; ">УЗНАТЬ ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+
+      <!--раздел тайский бокс-->
+      <div class="px-1 my-3 text-center thai-section" style="margin-left: -10px !important; margin-right: -10px; width: 1520px;">
+        <div class="col-5 mb-1 text-center" style="margin-left: 880px;">
+        
+        <div class="col-lg-6 mx-5 px-3 my-container text-white" style="margin-left: 106px !important; padding-top: 20px; padding-bottom: 25px; padding-left: 30px !important; padding-right: 30px !important; width: 420px">
+          <h1 class="display-5 fw-bold text-body-emphasis mt-1" style="color: azure !important; font-size: 35px;">Тайский бокс</h1>
+          <p class="lead mb-4" style="font-size: 20px; padding-top: 10px;">
+            Занятия тайским боксом проводятся в полностью оборудованном отдельном зале, имеется новая защитная экипировка разных размеров</p>
+            <p class="lead mb-4" style="font-size: 20px;">
+              Занятия проводятся для взрослых и детей с 7 лет при любом уровне подготовки</p>
+            <p class="lead mb-4" style="font-size: 20px;">Возможны персональные занятия</p>
+
+          <div class="">
+            <button type="button" onclick="location.href='muay-thai'" class="btn btn-primary btn-lg px-4 gap-3 button_header" style="margin-bottom: 16.5px; margin-left: 0px; ">УЗНАТЬ ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+
+      <!--йога-->
+      <div class="px-1 my-2 text-center yoga-section" style="width: 1520px; position: relative;">
+
+        <!-- Окно куки-->
+        {% include 'cookie.html' ignore missing %}
+       
+        <div class="col-6 mb-1 text-center">
+        
+        <div class="col-lg-6 mx-5 px-2 my-container text-white" style="margin-left: 100px !important; padding-top: 33px; padding-bottom: 34px; width: 420px;">
+          <h1 class="display-5 fw-bold text-body-emphasis mt-1" style="color: azure !important; font-size: 35px;">Йога</h1>
+          <p class="lead mb-4" style="font-size: 20px; padding-top: 10px;">Для занятий йогой также выделен специальный  зал, где в умиротворяющей обстановке проводятся занятия в различных направлениях, в т. ч. хатха-йога, кундалини-йога </p>
+            <p class="lead mb-4" style="font-size: 20px;">В зале имеются все необходимые принадлежности для занятий</p>
+            <p class="lead mb-2" style="font-size: 20px;">Возможны персональные занятия </p>
+
+          <div class="r">
+            <button type="button" onclick="location.href='yoga'" class="btn btn-primary btn-lg px-4 gap-3 button_header" style="margin-bottom: 16.5px; margin-left: 0px; margin-top: 20px !important;">УЗНАТЬ ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}

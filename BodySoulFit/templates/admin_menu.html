@@ -1,0 +1,25 @@
+
+    <!--хедер-->
+{% include 'header.html' ignore missing %}
+
+    <!-- Редактирование-->
+    <div class="apply-bg" style="position: relative;">
+        <div class="row mb-1 text-center mx-1 mx-auto p-2 text-white" style="background: rgba(53, 52, 52, 0.782);height: 900px; width: 1250px; border: 1px solid #EFB35A;">
+            
+            <div class="col-md-8 themed-grid-col" style="margin: 50px auto; text-align: center;">
+                <h1 style="color: bisque;" class="">ВЫБЕРИТЕ ДЕЙСТВИЕ</h1>
+                <hr>
+                <ol style="display: inline-block;">
+                    <a href="{{url_for('clients_applications')}}" style="color: #EFB35A; font-weight: 700; font-size: 25px; text-align: left;"><li>Посмотреть новые заявки</li></a>
+                    <a href="{{url_for('add_news')}}" style="color: #EFB35A; font-weight: 700;font-size: 25px;text-align: left;"><li>Добавить новости</li></a>
+                    <a href="{{url_for('change_schedule')}}" style="color: #EFB35A; font-weight: 700;font-size: 25px; text-align: left;"><li>Добавить клиентов в расписание</li></a>
+                    <a href="{{url_for('list_schedule')}}" style="color: #EFB35A; font-weight: 700;font-size: 25px; text-align: left;"><li>Посмотреть список клиентов на тренировках</li></a>
+                </ol>
+        </div>
+      </div>
+    </div>
+  
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}
+

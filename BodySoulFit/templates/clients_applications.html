@@ -1,0 +1,40 @@
+
+    <!--хедер-->
+{%  include 'header.html' ignore missing %}
+
+    
+    <div class="apply-bg-application" style="position: relative;background-attachment: scroll;">
+               
+        <div class=" mb-3 text-center mx-4 mx-auto p-2" style="background: rgba(0, 0, 0, 0.70);height: 750px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A;">
+            <div class="col-md-12 themed-grid-col">
+              <div class="pb-2 pt-5">
+                <h1 style="color: #EFB35A;" class="my-1">НОВЫЕ ЗАЯВКИ</h1>
+              </div>
+              <div class="row">
+                <div class="col-md-6 themed-grid-col text-center text-white headings" style=" font-size: 18px; padding: 20px 40px; line-height: 1.5; width: 700px !important;">   
+                   <!--список заявок-->
+                  <table style="width:1000px; margin: 0px 100px; color: bisque;">
+                  <tr>
+                  <th>Дата и время заявки</th>
+                  <th>ФИО клиента</th>
+                  <th>Телефон</th>
+                  <th>Email</th>
+                  </tr>
+                  </table>
+                   {% for x in new_applications %}
+                   <table style="width:1000px; margin: 0px 100px;">
+                    <tr>
+                      <td>{{x.application_datetime}}</td>
+                      <td>{{x.client_name}}</td>
+                      <td>{{x.client_phone}}</td>
+                      <td>{{x.client_email}}</td>
+                    </tr>
+                   </table>
+                  {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+     <!--футер-->
+{% include 'footer.html' ignore missing %}

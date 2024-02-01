@@ -1,0 +1,71 @@
+
+    <!--хедер-->
+{%  include 'header.html' ignore missing %}
+
+    <!-- Заявка-->
+    <div class="apply-bg-application" style="position: relative;">
+                <!-- Окно куки-->
+{% include 'cookie.html' ignore missing %}
+        <div class=" mb-3 text-center mx-4 mx-auto p-2" style="background: rgba(0, 0, 0, 0.70);height: 750px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A;">
+            <div class="col-md-12 themed-grid-col">
+              <div class="pb-3 pt-5">
+                <h1 style="color: #EFB35A;" class="my-4">ЗАПИСЬ НА ТРЕНИРОВКУ</h1>
+              </div>
+              <div class="row">
+                <div class="col-md-6 themed-grid-col text-center text-white headings" style="margin: 20px auto; font-size: 18px; padding: 40px 40px; line-height: 1.5; width: 700px !important;">   
+                    Пробная тренировка — это отличная возможность познакомиться с фитнес-центром и получить консультацию тренера.
+                    Отправив форму, вы можете получить консультацию по любым вопросам работы фитнес-центра.
+                    <div>
+                      <br>Укажите своё имя, телефон и email в соответствующих полях и нажмитек кнопку "Отправить".
+                      <br>Для обработки ваших персональных данных требуется согласие, поэтому необходимо поставить галочку в соответствующем пункте.
+                      С политикой обработки персональных данных вы можете ознакомиться по ссылке при отправке формы.
+                    </div>
+                  </div>
+
+                    <div class="col-md-4 themed-grid-col p-2 border border-warning" style="margin: 30px; margin-right: 70px; width: 450px;">
+                      
+                      <!--сообщение пользователю об отправке данных-->
+                      {% for notifcation in get_flashed_messages() %}
+                      <div class="flash" style="color: antiquewhite; size: 80px; background-color:cadetblue; height: 50px; padding-top: 10px;">{{notifcation}}</div>
+                      {% endfor %}
+                    
+                      <form action="/apply" method="post" style="width: 320px; margin: 20px auto">
+                        
+                    <div class="form-floating text-white">
+                      <!--проверка паттерна введённых данных для имени-->
+                      <input placeholder="Кайль Феликс Романович" pattern="[А-Яа-яa-zA-Z]*?\s[А-Яа-яa-zA-Z]*?\s[А-Яа-яa-zA-Z]*" type="text" name="client_name" required class="form-control rounded-0 border border-warning" id="floatingInput" style="background-color: rgba(9, 6, 8, 0);  border-bottom:#EFB35A !important; border-top: none !important; border-left: none !important; border-right: none !important; color: #C0C0C0;">
+                      <label  for="floatingInput">ФИО*</label>
+                    </div>
+                    <div class="form-floating text-white">
+                      <!--проверка паттерна введённых данных для телефона-->
+                      <input  type="text" placeholder="89997363366" pattern="8[0-9]{10}" name="client_phone" required class="form-control rounded-0 border border-warning border-bottom" id="floatingPassword" style="background-color: rgba(9, 6, 8, 0); border-bottom:#EFB35A !important; border-left: none !important; border-right: none !important; color: #C0C0C0;">
+                      <label  for="floatingPassword" >Телефон*</label>
+                    </div>
+
+                    <div class="form-floating text-white">
+                      <!--проверка паттерна введённых данных для email-->
+                        <input  type="text" placeholder="keil@mail.ru" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" name="client_email" required class="form-control rounded-0 border border-warning border-bottom" style="background-color: rgba(9, 6, 8, 0); border-left: none !important; border-right: none !important; color: #C0C0C0;" id="floatingPassword">
+                        <label  for="floatingPassword">Email*</label>
+                      </div>
+
+                    <div class="form-check text-start my-3" style="margin-left: 45px; ">
+                      <input id="check" class="form-check-input" type="checkbox" value="agree" id="flexCheckDefault" style="background-color: #EFB35A;">
+                      <label class="form-check-label text-white" for="flexCheckDefault" style="">
+                        Согласен на обработку персональных данных
+                      </label>
+                    </div>
+                    <button type="submit" onclick="checkIt()" class="btn btn-outline-warning" style="margin-top: 20px; width: 200px;">ОТПРАВИТЬ</button>
+                    <p class="mt-5 mb-3 text-body-secondary"><a href="#" class="text-white headings" style="font-size: 12px;" data-bs-toggle="modal" data-bs-target="#policy">Политика обработки персональных данных</a></p>
+                  </form>
+                </div>
+              </div>
+              
+                <!--модальное окно-->
+{% include 'policy.html' ignore missing %}
+            </div>
+
+          </div>
+    </div>
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}

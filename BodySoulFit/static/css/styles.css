@@ -1,0 +1,272 @@
+
+.headings{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lotus:hover,.tlg:hover,.ytb:hover,.wta:hover{
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.b-s-f:hover {
+    font-size: 18px;
+    transition: .2s;
+}
+
+.text-fill{
+    font-family: 'Merriweather', serif;
+}
+
+.header{
+    background-color: #827B7B;
+    
+}
+
+.button_header{
+    background-color:burlywood;
+    width: 170px;
+    margin-top: 5px !important;
+    margin-bottom: 3px;
+    margin-left: 45px;
+    border: 1px solid #7d705c;
+    background: linear-gradient(180deg, #e9e1d5 -74.04%, #edb056 38.07%, rgba(239, 179, 90, 0.00) 174.04%);
+    box-shadow: 1px 2px 0px 0px rgba(56, 53, 53, 0.25), 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: smaller;
+    font-weight: 600;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    
+}
+
+.subtext{
+    font-size: 9px;
+    color: #EFB35A;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding-left: 130px;
+    margin-left: 10px;
+    height: 20px;
+}
+
+.logo{
+    padding-right: 0px !important;
+    color: #e3cfb0 !important;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+a:hover{
+    color: #e3cfb0 !important;
+    font-weight: bolder;
+}
+
+a:active{
+    color: #e3cfb0 !important;
+}
+
+a:link{
+    color:aliceblue;
+}
+
+.button_header:hover{
+    background: linear-gradient(180deg, rgba(231, 191, 103, 0.784) -74.04%, #f4c881 38.07%, rgba(239, 179, 90, 0.00) 174.04%);
+    box-shadow: 0px 2px 1px 0px rgba(244, 173, 9, 0.25), 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #998057;
+}
+  
+.gym-section{
+    background: url(/static/assets/img/gym_section1.png), lightgray 50%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-container{
+    background: rgba(130, 123, 123, 0.90);
+}
+
+.aikido-section{
+    background: url(/static/assets/img/aikido1.png), lightgray 50%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thai-section{
+    background: url(/static/assets/img/thai1.jpg), lightgray 50%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yoga-section{
+    background: url(/static/assets/img/yoga2.jpg), lightgray 50%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-container {
+
+    padding: 50px 0 20px;
+    border: 1px solid #000;
+    background: #827B7B;
+  }
+
+.apply-bg{
+    background: url(/static/assets/img/back-to-the-gym.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 900px;
+    flex-shrink: 0;
+}
+
+.apply-bg-application{
+    background: url(/static/assets/img/back-to-the-gym.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 750px;
+    flex-shrink: 0;
+}
+
+.gym{
+    background: url(/static/assets/img/gym.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 1300px;
+    flex-shrink: 0;
+}
+
+.aikido{
+    background: url(/static/assets/img/aikido-bg.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 1300px;
+    flex-shrink: 0;
+}
+
+.m-thai{
+    background: url(/static/assets/img/m_thai.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 1300px;
+    flex-shrink: 0;
+}
+
+.yoga{
+    background: url(/static/assets/img/yoga-bg.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 1300px;
+    flex-shrink: 0;
+}
+
+
+#cookieBox { 
+    text-align: center; 
+    background: #ffffffcb; 
+    padding: 10px; 
+    border-radius: 16px; 
+    box-shadow: 0 8px 16px rgba(192, 153, 11, 0.482); 
+    margin-bottom: 10px;
+    margin-right: 10px;
+} 
+  
+#cookieBox.hide { 
+display: none;
+} 
+
+#cookieConsent p { 
+    color: #292626ee; 
+    margin: 20px 0 10px 0; 
+} 
+  
+#cookieConsent .buttons { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 20px; 
+} 
+  
+.acceptCookie, .rejectCookie { 
+    padding: 12px 20px; 
+    border: none; 
+    color: #ffffffa8; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: 600;
+    transition: all 0.5s ease; 
+} 
+  
+.acceptCookie { 
+    background: #717166; 
+    margin-right: 20px; 
+    padding: 12px 25px 12px 25px;
+} 
+  
+.acceptCookie:hover{
+    background:rgba(199, 151, 39, 0.784)
+}
+
+.rejectCookie { 
+    color: #7b7a70; 
+    padding: 11px;
+    background: transparent; 
+    border: 3px solid #8a897c; 
+    text-decoration: none; 
+} 
+
+.rejectCookie:hover{ 
+    border: 3px solid rgba(179, 138, 43, 0.784); 
+    color: rgba(179, 138, 43, 0.784); 
+}
+  
+#cookieHeader { 
+    font-size: 25px; 
+    font-weight: 600; 
+    margin-top: 20px; 
+}
+
+::placeholder {
+    color: rgb(117, 108, 39) !important;
+    opacity: 1;
+    text-align: right; 
+  }
+
+table, th, td {
+    border:1px solid rgb(119, 122, 107);
+  }
+th, td{
+    width: 200px !important;
+}
+
+.form-control{
+    background-color:#eae4e4;
+    width: 300px;
+    margin:0 auto
+}
+
+.cke-title-label{
+    width: 700px;
+}
+
+.cke-btn{
+    width: 150px !important;
+}
+
+.shedule{
+    width: 100px !important;
+}
+

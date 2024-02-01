@@ -1,0 +1,63 @@
+
+    <!--хедер-->
+{%  include 'header.html' ignore missing %}
+
+    <div class="apply-bg-application" style="position: relative;background-attachment: scroll;">
+               
+        <div class=" mb-3 text-center mx-4 mx-auto p-2" style="background: rgba(68, 67, 67, 0.7);height: 750px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A;">
+            <div class="col-md-12 themed-grid-col">
+              <div class="pb-2 pt-5">
+                <h1 style="color: #EFB35A;" class="my-1">РЕДАКТИРОВАНИЕ РАСПИСАНИЯ</h1>
+              </div>
+              
+              <div class="row">
+                <br>
+                <hr class="text-white">
+                <div class="col-md-5 themed-grid-col text-center text-white headings" style=" font-size: 18px; padding: 20px; line-height: 1.5; width: 400px !important; margin: 0 auto">   
+                  
+                  <form method="POST">
+                    
+                    {{ form.hidden_tag() }}
+                    <br>
+                    {{ form.date.label(class="form-label") }}
+            
+                    {{ form.date(class="form-control", rows="10") }}
+                    <br/>
+                    {{ form.time.label(class="form-label") }}
+            
+                    {{ form.time(class="form-control", rows="10") }}
+                    <br/>
+                    {{ form.name.label(class="form-label") }}
+            
+                    {{ form.name(class="form-control", rows="10") }}
+                    <br/>
+                    </div>
+                    <div class="col-md-5 themed-grid-col text-center text-white headings" style=" font-size: 18px; padding: 20px 40px; line-height: 1.5; width: 400px !important; margin: 0 auto;">
+                      <br>
+                      {{ form.phone.label(class="form-label") }}
+            
+                      {{ form.phone(class="form-control", row="10") }}
+                      <br>
+                      {{ form.email.label(class="form-label") }}
+              
+                      {{ form.email(class="form-control", row="10") }}
+                      <br>
+                      {{ form.section.label(class="form-label") }}
+              
+                      {{ form.section(class="form-control", row="10")  }}
+
+                    </div>
+                    <hr class="text-white">
+                    <div class="col-md-6">
+                      {{ form.submit(class="btn btn-secondary cke-btn") }}
+                    </div>
+                </form>
+                    <div class="col-md-6 ">
+                      <a href="{{url_for('list_schedule')}}" class="btn btn-outline-secondary text-white">Смотреть расписание</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+     <!--футер-->
+{% include 'footer.html' ignore missing %}

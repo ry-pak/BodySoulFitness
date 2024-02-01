@@ -1,0 +1,1 @@
+print(dt.date.today)

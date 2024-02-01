@@ -1,0 +1,39 @@
+
+    <!--хедер-->
+{% include 'header.html' ignore missing %}
+
+    <!-- Редактирование-->
+    <div class="apply-bg" style="position: relative;">
+        <div class="row mb-1 text-center mx-1 mx-auto p-2 text-white" style="background: rgba(68, 67, 67, 0.7);height: 900px; width: 1250px; border: 1px solid #EFB35A;">
+            
+            <div class="col-md-8 themed-grid-col" style="margin: 50px auto;">
+                <h1 style="color: bisque;" class="">ДОБАВИТЬ НОВОВСТЬ</h1>
+                <hr>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+            
+                    {{ form.title.label(class="form-label") }}
+            
+                    {{ form.title(class="form-control cke-title-label") }}
+                    <br/>
+                    <hr>
+                    {{ form.content.label(class="form-label") }}
+            
+                    {{ form.content(class="form-control", rows="20") }}
+                    <br/>
+
+                    {{ form.submit(class="btn btn-secondary cke-btn") }}
+
+                </form>
+                <hr>
+                {{ ckeditor.load() }}
+                {{ ckeditor.config(name='content') }}
+
+        </div>
+      </div>
+    </div>
+  
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}
+

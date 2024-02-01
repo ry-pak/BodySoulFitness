@@ -1,0 +1,42 @@
+
+        <!--хедер-->
+{% include 'header.html' ignore missing %}
+
+<!-- Новости-->
+          <div class="gym" style="position: relative; height: 100%; margin: 0;">
+            <!-- Окно куки-->
+{% include 'cookie.html' ignore missing %} 
+            <div class="col mb-3 text-center mx-4 mx-auto p-2" style="background: rgba(33, 32, 32, 0.856);height: 1000px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A;">
+                <div class="pb-2 pt-5">
+                    <h1 style="color: #EFB35A;" class="mt-4">НОВОСТИ</h1>
+                  </div>
+                  <div class="col-md-10 themed-grid-col text-white headings" style="margin: 10px auto; font-size: 18px; padding: 10px 40px; line-height: 1.5; text-align: left !important;">   
+                    
+                    <br>
+                    <div class="p-2 mb-2 rounded border-warning" style="border: 1px solid #EFB35A; ">
+                      <form method="POST">
+                        {{ form.hidden_tag() }}
+                
+                        {{ form.title.label(class="form-label") }}
+                
+                        {{ form.title(class="form-control cke-title-label") }}
+                        <br/>
+                        <hr>
+                        {{ form.content.label(class="form-label") }}
+                
+                        {{ form.content(class="form-control", rows="20") }}
+                        <br/>
+    
+                       <div style="margin: 0 400px;"> {{ form.submit(class="btn btn-secondary cke-btn") }}</div> 
+    
+                    </form>
+                    {{ ckeditor.load() }}
+                    {{ ckeditor.config(name='content') }}
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+               <!--футер-->
+{% include 'footer.html' ignore missing %}
+  

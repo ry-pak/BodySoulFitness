@@ -1,0 +1,28 @@
+
+    <!--хедер-->
+{% include 'header.html' ignore missing %}
+
+    <!-- Расписание-->
+    <div class="apply-bg" style="position: relative; margin-top: 5px;">
+      !-- Окно куки-->
+{% include 'cookie.html' ignore missing %} 
+
+        <div class="row mb-3 text-center mx-4 mx-auto " style="background: rgba(0, 0, 0, 0.70);height: 850px; width: 1250px; margin-top: 5px; border: 1px solid #EFB35A; position: relative;">
+            <div class="col-md-12 themed-grid-col">
+              <div class="pb-2 pt-5">
+                <h1 style="color: #EFB35A;" class="mt-4">РАСПИСАНИЕ ТРЕНИРОВОК</h1>
+              </div>
+              
+                <div class="col-md-6 themed-grid-col text-center text-white headings" style="margin: 10px auto; font-size: 18px; padding: 10px 40px; line-height: 1.5;">   
+                    Для просмотра расписания выбреите интересующую вас неделю и дату. 
+                </div>
+                     <div class="col-md-5 themed-grid-col p-2 border border-warning" style="margin: 20px auto; width: 1000px;">
+                      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FYekaterinburg&mode=WEEK&src=YWFyb25mYWN0b3R5QGdtYWlsLmNvbQ&color=%23039BE5" style="border:solid 1px #5d4d4d; background-color: #827B7B;" width="980" height="500" frameborder="0" scrolling="no">
+                      </iframe>
+                </div>
+            </div>
+          </div>
+    </div>
+
+     <!--футер-->
+{% include 'footer.html' ignore missing %}
